@@ -10,17 +10,19 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <header>
-      
+  <body class="d-flex flex-column vh-100">
+    <header class="bg-dark text-white pt-5 pb-4">
+      <div class="container">
+        <a class="navbar-brand" href="/">ココスキ！</a>
+      </div>
     </header>
-    
-    <main>
+
+    <main class="mb-auto">
       <%= yield %>
     </main>
-    
-    <footer>
-      
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+
     </footer>
   </body>
 </html>
